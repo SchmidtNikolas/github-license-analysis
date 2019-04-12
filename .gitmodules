@@ -1,0 +1,3 @@
+[submodule "jarallax"]
+	path = jarallax
+	url = https://github.com/nk-o/jarallax.git
