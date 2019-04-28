@@ -7,7 +7,14 @@
       <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <link href="css/style.css" rel="stylesheet">
+      <script>
+      $('#list-tab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+      </script>
    </head>
    <body>
 
@@ -154,7 +161,7 @@
              <div class="row">
                <div class="col-4">
                  <div class="list-group" id="list-tab" role="tablist">
-                   <a class="list-group-item list-group-item-action active" id="list-apache2-list" data-toggle="list" href="#list-apache2" role="tab" aria-controls="apache2">Apache License 2.0</a>
+                   <a class="list-group-item list-group-item-action" id="list-apache2-list" data-toggle="list" href="#list-apache2" role="tab" aria-controls="apache2">Apache License 2.0</a>
                    <a class="list-group-item list-group-item-action" id="list-gpl-list" data-toggle="list" href="#list-gpl" role="tab" aria-controls="gpl">GNU General Public License</a>
                    <a class="list-group-item list-group-item-action" id="list-mit-list" data-toggle="list" href="#list-mit" role="tab" aria-controls="mit">MIT License</a>
                    <a class="list-group-item list-group-item-action" id="list-bsd2-list" data-toggle="list" href="#list-bsd2" role="tab" aria-controls="bsd2">BSD 2-Clause "Simplified" License</a>
@@ -170,7 +177,7 @@
                </div>
                <div class="col-8">
                  <div class="tab-content" id="nav-tabContent">
-                   <div class="tab-pane fade show active" id="list-apache2" role="tabpanel" aria-labelledby="list-apache2-list">1</div>
+                   <div class="tab-pane fade" id="list-apache2" role="tabpanel" aria-labelledby="list-apache2-list">1</div>
                    <div class="tab-pane fade" id="list-gpl" role="tabpanel" aria-labelledby="list-gpl-list">2</div>
                    <div class="tab-pane fade" id="list-mit" role="tabpanel" aria-labelledby="list-mit-list">3</div>
                    <div class="tab-pane fade" id="list-bsd2" role="tabpanel" aria-labelledby="list-bsd2-list">4.</div>
