@@ -10,16 +10,15 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <link href="css/style.css" rel="stylesheet">
       <script>
-      jQuery(document).ready(function($){
-        var body = $( 'body' );
-      });
-      $(document).ready(function (e) {
-        $('#list-tab a').on('click', function (e) {
-          e.preventDefault();
-          console.log("Clicked ", this)
-          $(this).tab('show');
-        })
-      });
+        (function ( $ ) {
+          $(document).ready(function (e) {
+            $('#list-tab a').on('click', function (e) {
+              e.preventDefault();
+              console.log("Clicked ", this)
+              $(this).tab('show');
+            })
+          });
+        }( jQuery ));
       </script>
    </head>
    <body>
