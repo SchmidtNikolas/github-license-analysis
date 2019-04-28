@@ -11,8 +11,9 @@
       <link href="css/style.css" rel="stylesheet">
       <script>
       $('#list-tab a').on('click', function (e) {
-        e.preventDefault()
-        $(this).tab('show')
+        e.preventDefault();
+        console.log("Clicked ", this)
+        $(this).tab('show');
       })
       </script>
    </head>
@@ -156,7 +157,7 @@
              <h1 class="display-4">License Options</h1>
              <p class="lead">What options are available and what are the implications?</p>
              <hr class="my-4">
-             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better seelct which licenses might be more useful for a given project.</p>
+             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better select which licenses might be more useful for a given project.</p>
 
              <div class="row">
                <div class="col-4">
