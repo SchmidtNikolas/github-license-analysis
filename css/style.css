@@ -13,15 +13,20 @@
     height: 100%;
     z-index: -1;
 }
+
+.paragraph-image{
+    margin: auto;
+}
+
 .img-caption{
   position: absolute;
-  right:10px;
-  bottom:10px;
-  color:white;
-  font-weight:600;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  font-weight: 600;
 }
 .blockquote{
-  margin:5px;
-  padding:5px;
+  margin: 5px;
+  padding: 15px;
   font-style: italic;
 }
