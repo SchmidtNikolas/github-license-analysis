@@ -30,3 +30,12 @@
   padding: 15px;
   font-style: italic;
 }
+
+.easter-egg{
+  text-decoration: none !important;
+  color: inherit;
+}
+.easter-egg:hover{
+  color:inherit;
+  cursor: inherit;
+}

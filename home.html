@@ -21,6 +21,7 @@
         })
       });
       </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
 
@@ -41,10 +42,10 @@
             <a class="nav-link" href="#licenses">License Options</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#citations">Works Cited</a>
+            <a class="nav-link" href="#about">About Me!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#citations">Works Cited</a>
           </li>
         </ul>
       </div>
@@ -162,13 +163,13 @@
              <h1 class="display-4">License Options</h1>
              <p class="lead">What options are available and what are the implications?</p>
              <hr class="my-4">
-             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better select which licenses might be more useful for a given project.</p>
+             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better select which licenses might be more useful for a given project. To describe the impacts of these licesnes, I relate them to Creative Commons licesnes. Terminology used may make reference to the various incarnations of Creative Commons licensure. For more information on this terminology and its implications, I highly suggest looking over <a href="http://cconlinejournal.org/open/">this reading by Charles Lowe</a>.</p>
 
              <div class="row">
                <div class="col-4">
                  <div class="list-group" id="list-tab" role="tablist">
                    <a class="list-group-item list-group-item-action" id="list-apache2-list" data-toggle="list" href="#list-apache2" role="tab" aria-controls="apache2">Apache License 2.0</a>
-                   <a class="list-group-item list-group-item-action" id="list-gpl-list" data-toggle="list" href="#list-gpl" role="tab" aria-controls="gpl">GNU General Public License</a>
+                   <a class="list-group-item list-group-item-action" id="list-gpl-list" data-toggle="list" href="#list-gpl" role="tab" aria-controls="gpl">GNU General Public License v3.0</a>
                    <a class="list-group-item list-group-item-action" id="list-mit-list" data-toggle="list" href="#list-mit" role="tab" aria-controls="mit">MIT License</a>
                    <a class="list-group-item list-group-item-action" id="list-bsd2-list" data-toggle="list" href="#list-bsd2" role="tab" aria-controls="bsd2">BSD 2-Clause "Simplified" License</a>
                    <a class="list-group-item list-group-item-action" id="list-bsd3-list" data-toggle="list" href="#list-bsd3" role="tab" aria-controls="bsd3">BSD 3-Clause "New" or "Revised" License</a>
@@ -183,23 +184,237 @@
                </div>
                <div class="col-8">
                  <div class="tab-content" id="nav-tabContent">
-                   <div class="tab-pane fade" id="list-apache2" role="tabpanel" aria-labelledby="list-apache2-list">1</div>
-                   <div class="tab-pane fade" id="list-gpl" role="tabpanel" aria-labelledby="list-gpl-list">2</div>
-                   <div class="tab-pane fade" id="list-mit" role="tabpanel" aria-labelledby="list-mit-list">3</div>
-                   <div class="tab-pane fade" id="list-bsd2" role="tabpanel" aria-labelledby="list-bsd2-list">4.</div>
-                   <div class="tab-pane fade" id="list-bsd3" role="tabpanel" aria-labelledby="list-bsd3-list">5</div>
-                   <div class="tab-pane fade" id="list-eclipse" role="tabpanel" aria-labelledby="list-eclipse-list">6</div>
-                   <div class="tab-pane fade" id="list-affero" role="tabpanel" aria-labelledby="list-affero-list">7</div>
-                   <div class="tab-pane fade" id="list-gpl2" role="tabpanel" aria-labelledby="list-gpl2-list">8</div>
-                   <div class="tab-pane fade" id="list-glpl2" role="tabpanel" aria-labelledby="list-glpl2-list">9</div>
-                   <div class="tab-pane fade" id="list-glpl3" role="tabpanel" aria-labelledby="list-glpl3-list">10</div>
-                   <div class="tab-pane fade" id="list-mozilla" role="tabpanel" aria-labelledby="list-mozilla-list">11</div>
-                   <div class="tab-pane fade" id="list-un" role="tabpanel" aria-labelledby="list-un-list">12</div>
+                   <div class="tab-pane fade" id="list-apache2" role="tabpanel" aria-labelledby="list-apache2-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">Apache License 2.0</h5>
+                         <p class="card-text">The Apache License 2.0 is provided by the <a href="https://www.apache.org/">Apache Software Foundation</a> (ASF) to further their mission:  <blockquote><em>The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the backbone for some of the most visible and widely used applications in computing today.</em></blockquote> The ASF, at the time of writing, requires the use of this license on all projects developed by and for the ASF. The license is comparable to a Share Alike Creative Commons License, requiring any modifications to maintain the Apache license, while still allowing users to freely contribute to the project.</p>
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse and copyright notice are distributed as well. This license does not include any claims about liability, any warranty about the software, and it does not grant trademark rights on behalf of the contributor.</p>
+                         <a href="https://www.apache.org/licenses/LICENSE-2.0" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-gpl" role="tabpanel" aria-labelledby="list-gpl-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">GNU General Public License v3.0</h5>
+                         <p class="card-text">Another license comparable to Creative Commons Share Alike, the GNU General Public License v3.0, provided by the <a href="https://www.gnu.org/">GNU Free Software community</a>, is designed both to: <blockquote><em>(1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.</em></blockquote></p> This license provides a much stronger Copyleft appraoch than the Apache 2.0, however, and GNU encouages the use of the GPL, citing that it allows all users a degree of freedom to improve, alter, or otherwise "hack" (in the words of Ballentine) software to perform whatever function is necessary.</p>
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-mit" role="tabpanel" aria-labelledby="list-mit-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">MIT License</h5>
+                         <p class="card-text">The MIT Licesne is a very short, flexible Share Alike license designed to make things as simple as possible. The license itself serves as a summary, so it is included in its entirety below:</p>
+                         <br />
+                         <p class="card-text"><blockquote><em>
+                            Copyright (c) [year] [fullname]
+                            <br /><br />
+                            Permission is hereby granted, free of charge, to any person obtaining a copy
+                            of this software and associated documentation files (the "Software"), to deal
+                            in the Software without restriction, including without limitation the rights
+                            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                            copies of the Software, and to permit persons to whom the Software is
+                            furnished to do so, subject to the following conditions:
+                            <br /><br />
+                            The above copyright notice and this permission notice shall be included in all
+                            copies or substantial portions of the Software.
+                            <br /><br />
+                            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                            SOFTWARE.
+                          </em></blockquote></p>
+                         <a href="https://www.techopedia.com/definition/3287/mit-license" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-bsd2" role="tabpanel" aria-labelledby="list-bsd2-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">BSD 2-Clause "Simplified" License</h5>
+                         <p class="card-text">The BSD 2-Clause License is another concise license named on account of its two major clauses. Again, the entire licesne text is found below:</p>
+                         <br />
+                         <p class="card-text"><blockquote><em>
+                          Copyright [YEAR] [COPYRIGHT HOLDER]
+                          <br /><br />
+                          Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+                          <br /><br />
+                          1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+                          <br /><br />
+                          2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+                          <br /><br />
+                          THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+                          </em></blockquote></p>
+                         <a href="https://opensource.org/licenses/BSD-2-Clause" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-bsd3" role="tabpanel" aria-labelledby="list-bsd3-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">BSD 3-Clause "New" or "Revised" License</h5>
+                         <p class="card-text">The BSD 3-Clause License, much like the 2-clause, is yet another concise license named on account of its three major clauses. Again, the entire licesne text is found below:</p>
+                         <br />
+                         <p class="card-text"><blockquote><em>
+                           Copyright [YEAR] [COPYRIGHT HOLDER]
+                           <br /><br />
+                           Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+                           <br /><br />
+                           1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+                           <br /><br />
+                           2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+                           <br /><br />
+                           3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+                           <br /><br />
+                           THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+                          </em></blockquote></p>
+                         <a href="https://opensource.org/licenses/BSD-3-Clause" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-eclipse" role="tabpanel" aria-labelledby="list-eclipse-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">Eclipse Public License 2.0</h5>
+                         <p class="card-text">The Eclipse Public License, produced by the <a href="https://www.eclipse.org/">Eclipse Foundation</a>, is a unique license that operates on a premise similar to Share Alike. However, the license takes a further step and allows for contributors to modify the project and release the modified version under another license, provided that the new license:
+                           <blockquote><em>
+                            i) effectively disclaims on behalf of all other Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;
+                            <br /><br />
+                            ii) effectively excludes on behalf of all other Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;
+                            <br /><br />
+                            iii) does not attempt to limit or alter the recipients' rights in the Source Code under section 3.2; and
+                            <br /><br />
+                            iv) requires any subsequent distribution of the Program by any party to be under a license that satisfies the requirements of this section 3.
+                          </em></blockquote></p>
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.eclipse.org/legal/epl-2.0/" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-affero" role="tabpanel" aria-labelledby="list-affero-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">GNU Affero General Public License v3.0</h5>
+                         <p class="card-text">The <a href="https://www.gnu.org/licenses/why-affero-gpl.html">GNU Affero</a> General Public License v3.0 is a version of the GNU General Public License v3.0, with an additional requirement:<blockquote><em>if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there.</em></blockquote></p>
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-gpl2" role="tabpanel" aria-labelledby="list-gpl2-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">GNU General Public License v2.0</h5>
+                         <p class="card-text">The <a href="https://www.gnu.org/gnu/thegnuproject.html">GNU</a> General Public License v2.0 is a historical version of the GNU General Public License, as the GNU Software Foundation has existed for quite some time. The general reason for this license being on GitHub is to promote contributions to older porjects. Most newer projects sould be licensed under the GPL v3.0 or another license. The major addition in this revision was a clause requiring that software distributed under this software meet all requirements of the license, preventing patent thickets from forming when the provisions of the GPL were actually called upon in legal matters.
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-glpl2" role="tabpanel" aria-labelledby="list-glpl2-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">GNU Lesser General Public License v2.1</h5>
+                         <p class="card-text">The <a href="https://www.gnu.org/gnu/thegnuproject.html">GNU</a> Lesser General Public License v2.1 is a historical version of the GNU Lesser General Public License, as the GNU Software Foundation has existed for quite some time. The Lesser General Public License is designed for software libraries that can be used by other software released under a different license.  This license even allows for the LGPL software to be released as a part of a proprietary software appliaction without being restricted by the terms of other GNU licenses.
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-glpl3" role="tabpanel" aria-labelledby="list-glpl3-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">GNU Lesser General Public License v2.1</h5>
+                         <p class="card-text">The <a href="https://www.gnu.org/gnu/thegnuproject.html">GNU</a> Lesser General Public License v2.1 is a historical version of the GNU Lesser General Public License, as the GNU Software Foundation has existed for quite some time. The Lesser General Public License is designed for software libraries that can be used by other software released under a different license. This license even allows for the LGPL software to be released as a part of a proprietary software appliaction without being restricted by the terms of other GNU licenses. The major revision from from v2.1 is that this license has provisions detailing how this license interacts with libraries that are released under other software licenses, such as the MIT or Apache licenses.
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
+                         <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-mozilla" role="tabpanel" aria-labelledby="list-mozilla-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">Mozila Public License 2.0</h5>
+                         <p class="card-text">The Mozilla Public License, produced by the <a href="https://foundation.mozilla.org/en/">Mozilla foundation</a>, is a license that works to the benfit of both the developement team's ownership concerns and the open source community as a whole. The license provides rights to alter, modify, and distribute changes to the work, under a series of terms and conditions. These modification rights provided by the license are automatically revoked if the contributor fails to adhere to the requirements. Likewise, if the contributor becomes compliant, the rights are automatically restored.</p>
+                         <br />
+                         <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, so long as the user adheres to the terms of the license. Any changes to the software must be distributed alongsde unobfuscated source code. This license does not include any claims about liability, warranty, or trademarking about the software on behalf of the contributor.</p>
+                         <a href="https://www.mozilla.org/en-US/MPL/2.0/" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
+                   <div class="tab-pane fade" id="list-un" role="tabpanel" aria-labelledby="list-un-list">
+                     <div class="card text-center">
+                       <div class="card-body">
+                         <h5 class="card-title">The Unlicense</h5>
+                         <p class="card-text">The Unlicense, as the name implies, <em>un-licenses</em> software and dedicates the software to the public domain. Again, a short license, the entire text is included below:</p>
+                         <p><blockquote><em>
+                            This is free and unencumbered software released into the public domain.
+                            <br /><br />
+                            Anyone is free to copy, modify, publish, use, compile, sell, or
+                            distribute this software, either in source code form or as a compiled
+                            binary, for any purpose, commercial or non-commercial, and by any
+                            means.
+                            <br /><br />
+                            In jurisdictions that recognize copyright laws, the author or authors
+                            of this software dedicate any and all copyright interest in the
+                            software to the public domain. We make this dedication for the benefit
+                            of the public at large and to the detriment of our heirs and
+                            successors. We intend this dedication to be an overt act of
+                            relinquishment in perpetuity of all present and future rights to this
+                            software under copyright law.
+                            <br /><br />
+                            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+                            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+                            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+                            IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+                            OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+                            ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                            OTHER DEALINGS IN THE SOFTWARE.
+                            <br /><br />
+                            For more information, please refer to [http://unlicense.org]
+                         </p></blockquote></em>
+                         <br />
+                         <a href="https://unlicense.org/" class="btn btn-primary">More Information</a>
+                       </div>
+                      </div>
+                   </div>
                  </div>
                </div>
              </div>
 
           </div>
+        </div>
+      </div>
+
+      <div data-jarallax data-speed="0.2" class="jarallax" style="height:600px;">
+         <img class="jarallax-img" src="./img/tswift-me.jpg" alt="">
+         <p class="img-caption"><span class="badge badge-warning">Image by <a class="image-src" href="https://www.instagram.com/p/BwsEsK-huqu/">Taylor Swift</a></span></p>
+      </div>
+
+      <div data-jarallax data-speed="0.2" class="jarallax">
+         <div id="about" class="jumbotron" style="margin-bottom:-25px;padding-bottom:0px;">
+           <div class="container">
+             <h1 class="display-4">About <a href="https://www.youtube.com/watch?v=FuXNumBwDOM" class="easter-egg">Me!</a></h1>
+             <p class="lead">Background information for those who aren't familiar.</p>
+             <hr class="my-4">
+             <p>In my experience, the only course in my university’s Computer Science program not related to writing code, algorithms, or hardware is a Computer Ethics Course - which I was never able to take. Though, from anecdotal accounts, I've heard the course touches very little on who owns code, and instead touches on who is to blame when something goes wrong, such as a machine and related software administering the wrong amount of radiation to a cancer patient. Who would be to blame in this scenario if a work-for-hire programmer wrote code for Company A, who provided the software associated with Company B who built the machine, who then in turn sold it to the hospital? What if there was a license attached to this software that nobody had read? Then who would be responsible? <a href="https://github.com/devonb946/WUBRG">My senior project</a> involved the use of artwork, text, and content created by other parties other than myself. I asked my advisor whether there were any legal ramifications for using content that wasn't my own, but it seemed to be brushed off as something I really need not worry about. </p>
+             <p>Generally speaking, I feel as though programmers aren't as concerned about the legal status of their works as they could and should be. Programmers are constantly creating new intellectual property, often using GitHub, and the fact that many users can simply attach licenses to projects - and likely have done so - is simply shocking. The music industry would be up in arms over artists dropping music wihtout trying to merchandise it, and the same can be said for myriad others. So why is programming any different? The implications of ownership of software are so broad and significant that attention needs to be paid towards anything that has a substantial impact on the development process. GitHub's stance as a major interchange in the process provides it with a great deal of influence and into the day-to-day operations of computer programmers. As such, programmers need to be aware of the legal implications of attaching a license to their projects, and GitHub's default licenses need to be analyzed to see just how much impact they have on the control programmers have on their software.</p>
+             <p>The goal of this site is to provide a detailed analysis of why licenses are needed and what exactly GitHub is doing with the licenses provided by thier platform. Generally spaeking, I feel GitHub is in a really good spot. They advocate for open source software, but they don't force anyone into releasing their software unless they truly want to.</p>
+            </div>
         </div>
       </div>
 
