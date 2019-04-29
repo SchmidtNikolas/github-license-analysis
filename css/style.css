@@ -39,3 +39,6 @@
   color:inherit;
   cursor: inherit;
 }
+ p {
+   text-indent: 15px;
+ }

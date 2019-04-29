@@ -19,6 +19,9 @@
           console.log("Clicked ", this)
           $(this).tab('show');
         })
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        })
       });
       </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +37,9 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#what-is">What is Github?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#software">Software Cultures</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#stakeholders">Stakeholders</a>
@@ -86,6 +92,25 @@
              <p><a href="https://git-scm.com/downloads">Git</a> is a command-line utility that tracks entire projects in what are called "repositories", which are - in layman's terms - the folder that your entire project is stored in. Git also tracks historical revisions to the repository, so if a major bug is found, an older version can be reverted to. <a href="https://github.com/">GitHub</a> is a service used to host git repositories. The two together allow for multiple programmers to work on a project at the same time from their own devices without interfering with one another. Git tracks the changes, history, and merging of anyone's interactions with the project. If two programmers make changes, Git will ensure that the newest version - stored and accessible to all on GitHub - has the changes from all users. </p>
             <p>When a repository is created on Github, the user – in this case, usually a programmer – is provided with a selection of several open source licenses to attach to the project. In doing this, the standard in coding culture is that many user-programmers with little legal expertise simply follow through the over-simplified guide for choosing which license is “best” for a given project. However, all of the default licenses are open source, and an individual looking to profit off of his or her work may not be sure of what license to distribute their works under. Similar issues also arise regarding for-hire works hosted on Github where the developer is not in a position to make such a decision. What follows is a comparison of the licenses provided by GitHub and an analysis of the implications this has for programmers and their works.
             </p>
+            </div>
+        </div>
+      </div>
+
+      <div data-jarallax data-speed="0.2" class="jarallax" style="height:400px;">
+         <img class="jarallax-img" src="./img/ip.png" alt="">
+         <p class="img-caption"><span class="badge badge-warning">Image from <a class="image-src" href="https://gcn.com/articles/2017/06/30/5-strategies-open-source.aspx">GCN</a></span></p>
+      </div>
+
+      <div data-jarallax data-speed="0.2" class="jarallax" >
+         <div id="software" class="jumbotron" style="margin-bottom:0px;">
+           <div class="container">
+             <h1 class="display-4">Software Cultures</h1>
+             <p class="lead">What sort of environment surrounds software development?</p>
+             <hr class="my-4">
+             <p><a href="http://www.lessig.org/about/">Lawrence Lessig</a> writes about the open source movement and its roots in <a href="http://www.free-culture.cc/freecontent/">his 2004 piece on Free Culture</a>. Lessig discusses how, historically, software tended to become restricted and how this initiated towards open source movements. He writes <blockquote class="blockquote">"When computers with software were first made available commercially, the software—both the source code and the binaries—was free. You couldn’t run a program written for a Data General machine on an IBM machine, so Data General and IBM didn’t care much about controlling their software."</blockquote> In this environment, developers were able to alter software as necessary to meet their individual needs. Culture existed in this manner until technologial innovation made it <blockquote class="blockquote">"possible to import programs from one system to another, [at which point] it became economically attractive (at least in the view of some) to hide the code of your program."</blockquote></p>
+             <p>In this new environment, software written for companies was - and oftentimes still is - usually regarded as a trade secret or otherwise protected due to its integral role in business operations. The open source software movement came about to combat this, and return to the way in which software was managed before. By creating a community that works collaboratively, the open source software movement seeks to develop software that, generally speaking, can be used for nearly any purpose. The open source software movement can be closely related to open access research. In a piece for the MIT Press, <a href="https://ed.stanford.edu/faculty/willinsk">John Willinsky</a> discusses how open access journalism has grown in recent years. Willinsky advocates for the benefits of open access, which he suggests is useful in its ability <blockquote class="blockquote">"to extend an invitation and to acknowledge a right, for scholarship exists only as it is shared and circulated, only as it is open to new and diverging voices."</blockquote> The open source software movement, similarly, strives to ensure that software can be accessed and altered by these voices.</p>
+             <p><a href="http://bdballentine.com/">Dr. Brian D Ballentine</a> of West Virginia University discusses copyright and open source software somewhat critically in his chapter in <em>Composition & Copyright</em>. In the piece, Ballentine discusses an incident where an accident related to alterations in software led to a surgery being performed on the wrong side of the patient's body. Ballentine uses this case to argue that <blockquote class="blockquote">"the flagrant disregard and disrespect for the obfuscation techniques employed in the hospital software point towards a larger cultural, legal, and and ethical disconnect regarding copyrighted works in digital form."</blockquote>In this way, Ballentine suggests that the standard cultural practices occuring within the open source community, such as ignoring the decision to obfuscate software, stem from a culture built on repurposing software without regularly acknowledging ownership or fitness for a given purpose. Because members of the open source community often have full-time positions within coprorate entities, where they might often encounter obfuscated software, Ballentine suggests that the standard remix culture that pervades the software industry serves detrimental towards private ownership.</p>
+             <p>My stance may not be as extreme as that of Ballentine, but his argument misses a crucial point: <strong>I feel that many in the software industry assume a right to alter anything without understanding what rights they do and do not have.</strong> This leads to a culture that ignores the legal status of software and the rights asosciated with it or its owner. While it is a larger effort to change the entire cultural practice, I designed this site to provide a simple idea of what licensure rights are provided to contributors by the licenses commonly used on GitHub, and hopefully take a step towards making sure more are aware of the implications of adhering to and violating these licenses.</p>
             </div>
         </div>
       </div>
@@ -163,7 +188,7 @@
              <h1 class="display-4">License Options</h1>
              <p class="lead">What options are available and what are the implications?</p>
              <hr class="my-4">
-             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better select which licenses might be more useful for a given project. To describe the impacts of these licesnes, I relate them to Creative Commons licesnes. Terminology used may make reference to the various incarnations of Creative Commons licensure. For more information on this terminology and its implications, I highly suggest looking over <a href="http://cconlinejournal.org/open/">this reading by Charles Lowe</a>.</p>
+             <p>The various licenses GitHub makes accessible are listed below, and analyzed to help users better select which licenses might be more useful for a given project. To describe the impacts of these licesnes, I relate them to Creative Commons licesnes as described previously.</p>
 
              <div class="row">
                <div class="col-md-4">
@@ -188,7 +213,7 @@
                      <div class="card text-center">
                        <div class="card-body">
                          <h5 class="card-title">Apache License 2.0</h5>
-                         <p class="card-text">The Apache License 2.0 is provided by the <a href="https://www.apache.org/">Apache Software Foundation</a> (ASF) to further their mission:  <blockquote><em>The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the backbone for some of the most visible and widely used applications in computing today.</em></blockquote> The ASF, at the time of writing, requires the use of this license on all projects developed by and for the ASF. The license is comparable to a Share Alike Creative Commons License, requiring any modifications to maintain the Apache license, while still allowing users to freely contribute to the project.</p>
+                         <p class="card-text">The Apache License 2.0 is provided by the <a href="https://www.apache.org/">Apache Software Foundation</a> (ASF) to further their mission:  <blockquote class="blockquote">The ASF develops, shepherds, and incubates hundreds of freely-available, enterprise-grade projects that serve as the backbone for some of the most visible and widely used applications in computing today.</blockquote> The ASF, at the time of writing, requires the use of this license on all projects developed by and for the ASF. The license is comparable to a Share Alike Creative Commons License, requiring any modifications to maintain the Apache license, while still allowing users to freely contribute to the project.</p>
                          <br />
                          <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse and copyright notice are distributed as well. This license does not include any claims about liability, any warranty about the software, and it does not grant trademark rights on behalf of the contributor.</p>
                          <a href="https://www.apache.org/licenses/LICENSE-2.0" class="btn btn-primary">More Information</a>
@@ -199,7 +224,7 @@
                      <div class="card text-center">
                        <div class="card-body">
                          <h5 class="card-title">GNU General Public License v3.0</h5>
-                         <p class="card-text">Another license comparable to Creative Commons Share Alike, the GNU General Public License v3.0, provided by the <a href="https://www.gnu.org/">GNU Free Software community</a>, is designed both to: <blockquote><em>(1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.</em></blockquote></p> This license provides a much stronger Copyleft appraoch than the Apache 2.0, however, and GNU encouages the use of the GPL, citing that it allows all users a degree of freedom to improve, alter, or otherwise "hack" (in the words of Ballentine) software to perform whatever function is necessary.</p>
+                         <p class="card-text">Another license comparable to Creative Commons Share Alike, the GNU General Public License v3.0, provided by the <a href="https://www.gnu.org/">GNU Free Software community</a>, is designed both to: <blockquote class="blockquote">(1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.</blockquote></p> This license provides a much stronger Copyleft appraoch than the Apache 2.0, however, and GNU encouages the use of the GPL, citing that it allows all users a degree of freedom to improve, alter, or otherwise "hack" (in the words of Ballentine) software to perform whatever function is necessary.</p>
                          <br />
                          <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
                          <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="btn btn-primary">More Information</a>
@@ -212,7 +237,7 @@
                          <h5 class="card-title">MIT License</h5>
                          <p class="card-text">The MIT Licesne is a very short, flexible Share Alike license designed to make things as simple as possible. The license itself serves as a summary, so it is included in its entirety below:</p>
                          <br />
-                         <p class="card-text"><blockquote><em>
+                         <p class="card-text"><blockquote class="blockquote">
                             Copyright (c) [year] [fullname]
                             <br /><br />
                             Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -232,7 +257,7 @@
                             LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
                             OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
                             SOFTWARE.
-                          </em></blockquote></p>
+                          </blockquote></p>
                          <a href="https://www.techopedia.com/definition/3287/mit-license" class="btn btn-primary">More Information</a>
                        </div>
                       </div>
@@ -243,7 +268,7 @@
                          <h5 class="card-title">BSD 2-Clause "Simplified" License</h5>
                          <p class="card-text">The BSD 2-Clause License is another concise license named on account of its two major clauses. Again, the entire licesne text is found below:</p>
                          <br />
-                         <p class="card-text"><blockquote><em>
+                         <p class="card-text"><blockquote class="blockquote">
                           Copyright [YEAR] [COPYRIGHT HOLDER]
                           <br /><br />
                           Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -253,7 +278,7 @@
                           2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
                           <br /><br />
                           THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-                          </em></blockquote></p>
+                          </blockquote></p>
                          <a href="https://opensource.org/licenses/BSD-2-Clause" class="btn btn-primary">More Information</a>
                        </div>
                       </div>
@@ -264,7 +289,7 @@
                          <h5 class="card-title">BSD 3-Clause "New" or "Revised" License</h5>
                          <p class="card-text">The BSD 3-Clause License, much like the 2-clause, is yet another concise license named on account of its three major clauses. Again, the entire licesne text is found below:</p>
                          <br />
-                         <p class="card-text"><blockquote><em>
+                         <p class="card-text"><blockquote class="blockquote">
                            Copyright [YEAR] [COPYRIGHT HOLDER]
                            <br /><br />
                            Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -276,7 +301,7 @@
                            3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
                            <br /><br />
                            THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-                          </em></blockquote></p>
+                          </blockquote></p>
                          <a href="https://opensource.org/licenses/BSD-3-Clause" class="btn btn-primary">More Information</a>
                        </div>
                       </div>
@@ -286,7 +311,7 @@
                        <div class="card-body">
                          <h5 class="card-title">Eclipse Public License 2.0</h5>
                          <p class="card-text">The Eclipse Public License, produced by the <a href="https://www.eclipse.org/">Eclipse Foundation</a>, is a unique license that operates on a premise similar to Share Alike. However, the license takes a further step and allows for contributors to modify the project and release the modified version under another license, provided that the new license:
-                           <blockquote><em>
+                           <blockquote class="blockquote">
                             i) effectively disclaims on behalf of all other Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;
                             <br /><br />
                             ii) effectively excludes on behalf of all other Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;
@@ -294,7 +319,7 @@
                             iii) does not attempt to limit or alter the recipients' rights in the Source Code under section 3.2; and
                             <br /><br />
                             iv) requires any subsequent distribution of the Program by any party to be under a license that satisfies the requirements of this section 3.
-                          </em></blockquote></p>
+                          </blockquote></p>
                          <br />
                          <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
                          <a href="https://www.eclipse.org/legal/epl-2.0/" class="btn btn-primary">More Information</a>
@@ -305,7 +330,7 @@
                      <div class="card text-center">
                        <div class="card-body">
                          <h5 class="card-title">GNU Affero General Public License v3.0</h5>
-                         <p class="card-text">The <a href="https://www.gnu.org/licenses/why-affero-gpl.html">GNU Affero</a> General Public License v3.0 is a version of the GNU General Public License v3.0, with an additional requirement:<blockquote><em>if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there.</em></blockquote></p>
+                         <p class="card-text">The <a href="https://www.gnu.org/licenses/why-affero-gpl.html">GNU Affero</a> General Public License v3.0 is a version of the GNU General Public License v3.0, with an additional requirement:<blockquote class="blockquote">if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there.</blockquote></p>
                          <br />
                          <p class="card-text">This license permits commercial use, distribution, modification, patent use, and private use of any software distributed under it, under the condition that the licesnse, copyright notice, and source code are distributed as well. Any changes must utilize the same license and provide an indication of what the changes entail. This license does not include any claims about liability or any warranty about the software on behalf of the contributor.</p>
                          <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" class="btn btn-primary">More Information</a>
@@ -361,7 +386,7 @@
                        <div class="card-body">
                          <h5 class="card-title">The Unlicense</h5>
                          <p class="card-text">The Unlicense, as the name implies, <em>un-licenses</em> software and dedicates the software to the public domain. Again, a short license, the entire text is included below:</p>
-                         <p><blockquote><em>
+                         <p><blockquote class="blockquote">
                             This is free and unencumbered software released into the public domain.
                             <br /><br />
                             Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -386,7 +411,7 @@
                             OTHER DEALINGS IN THE SOFTWARE.
                             <br /><br />
                             For more information, please refer to [http://unlicense.org]
-                         </p></blockquote></em>
+                         </p></blockquote>
                          <br />
                          <a href="https://unlicense.org/" class="btn btn-primary">More Information</a>
                        </div>
@@ -402,11 +427,11 @@
 
       <div data-jarallax data-speed="0.2" class="jarallax" style="height:600px;">
          <img class="jarallax-img" src="./img/tswift-me.jpg" alt="">
-         <p class="img-caption"><span class="badge badge-warning">Image by <a class="image-src" href="https://www.instagram.com/p/BwsEsK-huqu/">Taylor Swift</a></span></p>
+         <p class="img-caption"><span class="badge badge-warning">Image from <a class="image-src" href="https://www.instagram.com/p/BwsEsK-huqu/">Taylor Swift</a></span></p>
       </div>
 
       <div data-jarallax data-speed="0.2" class="jarallax">
-         <div id="about" class="jumbotron" style="margin-bottom:-25px;padding-bottom:0px;">
+         <div id="about" class="jumbotron" style="margin-bottom:-15px;">
            <div class="container">
              <h1 class="display-4">About <a href="https://www.youtube.com/watch?v=FuXNumBwDOM" class="easter-egg">Me!</a></h1>
              <p class="lead">Background information for those who aren't familiar.</p>
@@ -415,6 +440,59 @@
              <p>Generally speaking, I feel as though programmers aren't as concerned about the legal status of their works as they could and should be. Programmers are constantly creating new intellectual property, often using GitHub, and the fact that many users can simply attach licenses to projects - and likely have done so - is simply shocking. The music industry would be up in arms over artists dropping music wihtout trying to merchandise it, and the same can be said for myriad others. So why is programming any different? The implications of ownership of software are so broad and significant that attention needs to be paid towards anything that has a substantial impact on the development process. GitHub's stance as a major interchange in the process provides it with a great deal of influence and into the day-to-day operations of computer programmers. As such, programmers need to be aware of the legal implications of attaching a license to their projects, and GitHub's default licenses need to be analyzed to see just how much impact they have on the control programmers have on their software.</p>
              <p>The goal of this site is to provide a detailed analysis of why licenses are needed and what exactly GitHub is doing with the licenses provided by thier platform. Generally spaeking, I feel GitHub is in a really good spot. They advocate for open source software, but they don't force anyone into releasing their software unless they truly want to.</p>
             </div>
+        </div>
+      </div>
+
+      <div data-jarallax data-speed="0.2" class="jarallax">
+         <div id="citations" class="jumbotron" style="margin-bottom:-15px;">
+           <div class="container">
+             <hr class="my-4">
+             <h1 class="display-4">Works Cited</h1>
+             <p class="lead">In addition to sites linked to above, the following resources were also used:</p>
+             <hr class="my-4">
+             <p>TO BE ADDED</p>
+            </div>
+        </div>
+      </div>
+      <div data-jarallax data-speed="0.2" class="jarallax">
+         <div class="jumbotron dark" style="margin-bottom:-15px;background:#454a51;">
+           <footer class="page-footer font-small blue pt-4">
+            <div class="container-fluid text-center text-md-left">
+              <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                  <h5 class="text-uppercase">Disclaimer:</h5>
+                  <p>While I have done my best to ensure that the information presented here is factual, I am not a lawyer, and I am not your lawyer. The information presented on this site is not legal advice in any way, shape or form. Your ability to access this site and communicate with me does not consitiute any endorsement nor agreement by myself nor any other hosts or affilaited parties to engage with you in any legal matters private or public. If you're using this site for that sort of thing, you're probably in a bad spot.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="https://github.com/SchmidtNikolas/github-license-analysis">GitHub</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 mb-md-0 mb-3">
+                    <h5 class="text-uppercase">License</h5>
+                    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                    </a>
+                    +
+                    <a rel="license" href="https://github.com/SchmidtNikolas/github-license-analysis/issues">
+                      <img alt="Commercial-license-button.png" src="https://wiki.creativecommons.org/images/9/91/Commercial-license-button.png">
+                    </a>
+                    <br />
+                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> and the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3.0</a>. To inquire about commercial use, please <a href="https://github.com/SchmidtNikolas/github-license-analysis/issues">make an issue on this project's GitHub repository</a>.
+                  </div>
+              </div>
+            </div>
+            <div class="footer-copyright text-center py-3">©
+              <script type = "text/javascript">
+                 var dt = new Date();
+                 document.write(1900 + dt.getYear());
+              </script>
+            - Nikolas Schmidt</div>
+          </footer>
         </div>
       </div>
 
